@@ -45,7 +45,7 @@ stop
 
 **业务流程图如下：**
 
-![flow1](aaa.jpg)
+![flow1](aaa.png)
 
 **流程说明：**
 
