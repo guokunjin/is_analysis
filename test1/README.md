@@ -9,37 +9,42 @@
 
 ``` flow1
 @startuml
-title 期末考试流程
+|教务处|
 start
 :安排考试;
 :考试安排表]
+|教师|
 :出卷;
-fork
-:A、B试卷]
-fork again
+split
+:A、B试卷|
+split again
 :打印审批表]
+|系主任|
 :审批签字;
 :打印审批表]
-end fork
+end split
+|教务处|
 :打印试卷;
 :试卷]
+|学生|
 :参加考试;
 :答卷]
+|教师|
 :阅卷出成绩;
 fork
-:成绩单]
-if(有不及格?) then(有)
+|教务处|
+:成绩单;
+if( 有不及格？) then( 有 )
 :安排补考;
 endif
-:补考安排表]
+:补考安排表;
 fork again
-:答卷]
+|教师|
+:答卷;
 :装订存档;
-end fork
+end fork;
 :期末流程结束;
-
 stop
-
 @enduml
 ```
 
@@ -57,31 +62,38 @@ stop
 
 ``` flow2
 @startuml
-title 客户维修服务流程
+|客户|
 start
 :申请服务;
-if(是新客户吗?) then(是)
-      :登记客户信息;
-else(不是)
-
+|业务经理|
+if (是新客户吗?) then (是)
+  :登记客户信息;
+else (不是)
 endif
-:上门勘察;
+ :上门勘察;
 :制定方案;
-if(满意吗?) then(否)
-   stop
-else(是)
-:签订服务合同;
+|客户|
+if (满意吗?) then (是)
+  :签订服务合同;
+else (否)
+  stop
+ endif
+|业务经理|
 fork
-:安排工人;
+  :安排工人;
 fork again
-:安排材料;
-end fork
-:填写订单;
+  :安排材料;
+endfork
+:填写派工单;
+|工人|
 :领取材料;
 :上门服务;
+|客户|
 :验收并填写反馈意见;
+|业务经理|
 :交回派工单;
-:结算收款;
+|财务人员|
+:结束收款;
 stop
 @enduml
 ```
