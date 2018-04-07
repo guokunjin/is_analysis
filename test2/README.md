@@ -82,29 +82,79 @@ brow-->(图书借阅管理)
 
 ##     3. 用例规约表
 
-###     3.1 “借出图书”用例
+###     3.1 “借书”用例
 
-参见：表7.5
+![jieshu_yongli](jieshu_yongli.png)
 
-###     3.2 “购入图书”用例
+###     3.2 “还书”用例
 
-参见：表7.5
+![huanshu_yongli](huanshu_yongli.png)
 
-**“购入图书”用例流程图源码如下：**
-``` uc1_flow
+###     3.3 “预借”用例
+
+![yujie_yongli](yujie_yongli.png)
+
+**“借书”用例流程图源码如下：**
+``` 
 @startuml
 start
-:Hello world;
-:This is on defined on
-several **lines**;
+:刷借书卡;
+if (该读者借书数量达上限？) then (是)
+:不可借阅;
+stop
+else(否)
+:可借阅;
+endif
+:读取条形码登记;
+:借书成功;
 stop
 @enduml
 ```
 
-**“购入图书”用例流程图源码如下：**
+**“借书”用例流程图如下：**
 
-![uc1_flow](usecase1_flow.jpg)
+![jieshu](jieshu.jpg)
 
-###     3.3 “***”用例
 
-参见：表7.5
+**“还书”用例流程图源码如下：**
+``` 
+@startuml
+start
+:刷借书卡;
+:检索借书信息和该读者以借阅的时间;
+if (是否超过借阅时间) then (是)
+:缴纳违约金;
+else(否)
+endif
+:输入还书登记信息;
+:还书;
+stop
+@enduml
+```
+
+**“还书”用例流程图如下：**
+
+![huanshu](huanshu.jpg)
+
+
+**“预借”用例流程图源码如下：**
+``` 
+@startuml
+|借书者|
+start
+:刷借书卡;
+:选择预定登记;
+:提交预定登记请求;
+|管理员|
+if (是否同意预借) then (是)
+:预定成功;
+else(否)
+:预定失败;
+endif
+stop
+@enduml
+```
+
+**“预借”用例流程图如下：**
+
+![yujie](yujie.jpg)
