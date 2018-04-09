@@ -61,6 +61,8 @@ class BookDescribeInfo_图书描述{
     +String type
     +List<String> catalog
     +String describe
+    +double price
+    +String author
 }
 class teacher{
     +String role="teacher"
@@ -76,12 +78,11 @@ class admin_管理员{
 teacher --|> Lender_借阅者:Extension
 student --|> Lender_借阅者:Extension
 BookDescribeInfo_图书描述 --* BookInfo_图书信息类:Composition
-Lender_借阅者 ..> BookInfo_图书信息类
-Lender_借阅者 ..> Reserve_预借信息类
-Lender_借阅者 ..> Lend_借阅信息类
-BookInfo_图书信息类 <.. admin_管理员
-Reserve_预借信息类 <.. admin_管理员
-Lend_借阅信息类  <.. admin_管理员
+Lender_借阅者 ..> BookInfo_图书信息类:select
+Lender_借阅者 ..> Reserve_预借信息类:add、get
+BookInfo_图书信息类 <.. admin_管理员:可进行所有操作
+Reserve_预借信息类 <.. admin_管理员:可进行所有操作
+Lend_借阅信息类  <.. admin_管理员:可进行所有操作
 @enduml
 ```
 
@@ -91,22 +92,10 @@ Lend_借阅信息类  <.. admin_管理员
 
 ### 1.3. 类图说明：
 ```
-图书管理系统能够对图书进行注册登记，也就是将图书的基本信息
-（如编号、书名、价格、作者等）预先存入数据库中，供以后检索，
-并且能够对借阅人进行注册登记，包括记录借阅人的姓名、编号、
-班级、年龄、性别、地址、电话等信息。同时，图书管理系统提高
-方便的查询方法。如以书名、作者、出版社、出版时间等信息进行
-图书检索，并能反映出图书的借阅情况；以借阅人编号对借阅人信
-息进行检索；以出版社名称查询出版社联系方式等信息。图书管理
-系统提供对书籍进行预订的功能，也提供旧书销毁功能，对于淘汰、
-损坏、丢失的书名可及时对数据库进行修改。图书管理系统能够对
-使用该管理系统的用户进行管理，按照不同的工作职能提供不同的
-功能授权。总的来说，图书管理系统主要包含下列功能。  
-1）读者管理：读者信息的制定、输入、修改、查询，包括种类、性别、借
-	书数量、借书期限、备注等。  
-2）书籍管理：书籍基本信息制定、输入、修改、查询，包括书籍编号、类别、关键词、备注。  
-3）借阅管理：包括借书、还书、预订书籍、续借、查询书籍、过期处理和书籍丢失后的处理。  
-4）系统管理：包括用户权限管理、数据管理和自动借还机的管理。
+Lender_借阅者有两个子类分别是teacher和student
+BookDescribeInfo_图书描述是BookInfo_图书信息类的一部分
+lender和admin可以对图书信息类、预借信息类、借阅信息类进行操作但是操作的权限不同
+比如：lender只能对BookInfo进行select操作，但是管理员能对其进行更多的删改添加操作
 ```
 
 
