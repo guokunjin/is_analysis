@@ -113,7 +113,7 @@ stop
 
 **“借书”用例流程图如下：**
 
-![jieshu](jieshu.jpg)
+![jieshu](jieshu.png)
 
 
 **“还书”用例流程图源码如下：**
@@ -134,7 +134,7 @@ stop
 
 **“还书”用例流程图如下：**
 
-![huanshu](huanshu.jpg)
+![huanshu](huanshu.png)
 
 
 **“预借”用例流程图源码如下：**
@@ -157,4 +157,4 @@ stop
 
 **“预借”用例流程图如下：**
 
-![yujie](yujie.jpg)
+![yujie](yujie.png)
