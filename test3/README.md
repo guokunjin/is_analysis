@@ -75,11 +75,12 @@ class admin_管理员{
     int accessLevel
     adminMethod()
 }
-teacher --|> Lender_借阅者:Extension
-student --|> Lender_借阅者:Extension
-BookDescribeInfo_图书描述 --* BookInfo_图书信息类:Composition
-Lender_借阅者 ..> BookInfo_图书信息类:select
-Lender_借阅者 ..> Reserve_预借信息类:add、get
+teacher"1" --|> "1"Lender_借阅者:Extension
+student"1" --|> "1"Lender_借阅者:Extension
+BookDescribeInfo_图书描述"1" --* "1"BookInfo_图书信息类:Composition
+Lender_借阅者"1" -- "m"BookInfo_图书信息类:select
+Lender_借阅者"1" -- "m"Reserve_预借信息类:add、get
+Lender_借阅者"1" -- "m"Lend_借阅信息类
 BookInfo_图书信息类 <.. admin_管理员:可进行所有操作
 Reserve_预借信息类 <.. admin_管理员:可进行所有操作
 Lend_借阅信息类  <.. admin_管理员:可进行所有操作
