@@ -39,11 +39,7 @@ class Lender_借阅者{
     +int  maxBorrowDays
     +int  borrowNum
     +select()
-    +borrow()
-    +xujie()
-    +yujie()
-    +returnBook()
-    +findBook()
+    +addLender()
 }
 class BookInfo_图书信息类{
     +String  ISBN
@@ -75,11 +71,10 @@ class admin_管理员{
     int accessLevel
     adminMethod()
 }
-teacher"1" --|> "1"Lender_借阅者:Extension
-student"1" --|> "1"Lender_借阅者:Extension
-BookDescribeInfo_图书描述"1" --* "1"BookInfo_图书信息类:Composition
-Lender_借阅者"1" -- "m"BookInfo_图书信息类:select
-Lender_借阅者"1" -- "m"Reserve_预借信息类:add、get
+teacher --|> Lender_借阅者:Extension
+student--|> Lender_借阅者:Extension
+BookDescribeInfo_图书描述 --* BookInfo_图书信息类:Composition
+Lender_借阅者"1" -- "m"Reserve_预借信息类
 Lender_借阅者"1" -- "m"Lend_借阅信息类
 BookInfo_图书信息类 <.. admin_管理员:可进行所有操作
 Reserve_预借信息类 <.. admin_管理员:可进行所有操作
@@ -182,11 +177,7 @@ class Lender_借阅者{
     +int  maxBorrowDays
     +int  borrowNum
     +select()
-    +borrow()
-    +xujie()
-    +yujie()
-    +returnBook()
-    +findBook()
+    +addLender()
 }
 @enduml
 ``` 
@@ -205,12 +196,8 @@ Lender：借阅者
 		maxBorrowNum:最大借阅数量
 		borrowNum:已借数量
 	方法：
-		select()：查询自己的借阅记录
-		borrow()：借书
-		xujie():续借图书
-		yujie():预借图书
-		returnBook()：归还图书
-		findBook():查询图书信息
+		select()：查询借阅者
+		addLender()：添加借阅者
 ```
 
 ### 2.4 类BookInfo
