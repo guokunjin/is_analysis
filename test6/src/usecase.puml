@@ -1,0 +1,77 @@
+@startuml
+skinparam handwritten true
+
+skinparam usecase {
+	BackgroundColor DarkSeaGreen
+	BorderColor DarkSlateGray
+
+	BackgroundColor<< Main >> YellowGreen
+	BorderColor<< Main >> YellowGreen
+
+	ArrowColor Olive
+	ActorBorderColor black
+	ActorFontName Courier
+
+	ActorBackgroundColor<< Human >> Gold
+}
+
+left to right direction
+title 基于GitHub的实验管理平台--用例图
+
+actor teachers
+
+actor students
+
+actor users
+
+users <|-- teachers
+
+users <|-up- admin
+
+users <|-- students
+
+
+package 用户用例集 {
+users -left-> (登录)
+
+users -left-> (登出)
+
+users -left-> (查看用户信息)
+
+users -left-> (修改用户信息)
+
+users -left-> (修改密码)
+
+}
+
+
+package 业务用例集 {
+
+teachers --> (成绩录入)
+teachers --> (修改成绩)
+teachers --> (打印成绩)
+teachers --> (删除成绩)
+teachers --> (课程列表)
+teachers --> (选择学期)
+teachers --> (学生列表)
+
+students --> (课程列表)
+students --> (选择学期)
+students --> (学生列表)
+students --> (学生选课)
+students --> (查看成绩)
+
+}
+
+package 管理用例集{
+
+admin --> (录入学生信息)
+admin --> (录入教师信息)
+admin --> (录入院系信息)
+admin --> (录入班级信息)
+admin --> (录入课程信息)
+
+}
+
+
+@enduml
