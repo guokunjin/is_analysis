@@ -47,10 +47,9 @@ users -left-> (修改密码)
 
 package 业务用例集 {
 
+teachers --> (发布实验)
 teachers --> (成绩录入)
-teachers --> (修改成绩)
 teachers --> (打印成绩)
-teachers --> (删除成绩)
 teachers --> (课程列表)
 teachers --> (选择学期)
 teachers --> (学生列表)
