@@ -107,7 +107,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="399">
-                <caret line="21" column="45" lean-forward="true" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
+                <caret line="21" column="45" lean-forward="false" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -119,8 +119,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="-342">
-                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <first_editor relative-caret-position="319">
+                <caret line="38" column="67" lean-forward="true" selection-start-line="38" selection-start-column="67" selection-end-line="38" selection-end-column="67" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -148,6 +148,13 @@
       <projects_view />
     </option>
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/README.md" />
+      </list>
+    </option>
+  </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
@@ -155,8 +162,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="232" />
-    <option name="y" value="174" />
+    <option name="x" value="540" />
+    <option name="y" value="95" />
     <option name="width" value="1475" />
     <option name="height" value="891" />
   </component>
@@ -324,15 +331,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1527495509706</updated>
-      <workItem from="1527495512763" duration="1469000" />
+      <workItem from="1527495512763" duration="3544000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1469000" />
+    <option name="totallyTimeSpent" value="3544000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="232" y="174" width="1475" height="891" extended-state="0" />
+    <frame x="540" y="95" width="1475" height="891" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -504,7 +511,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="399">
-            <caret line="21" column="45" lean-forward="true" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
+            <caret line="21" column="45" lean-forward="false" selection-start-line="21" selection-start-column="45" selection-end-line="21" selection-end-column="45" />
             <folding />
           </first_editor>
           <second_editor />
@@ -514,8 +521,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-342">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <first_editor relative-caret-position="319">
+            <caret line="38" column="67" lean-forward="true" selection-start-line="38" selection-start-column="67" selection-end-line="38" selection-end-column="67" />
             <folding />
           </first_editor>
           <second_editor />
