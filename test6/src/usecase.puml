@@ -57,7 +57,6 @@ teachers --> (学生列表)
 students --> (课程列表)
 students --> (选择学期)
 students --> (学生列表)
-students --> (学生选课)
 students --> (查看成绩)
 
 }
@@ -69,6 +68,8 @@ admin --> (录入教师信息)
 admin --> (录入院系信息)
 admin --> (录入班级信息)
 admin --> (录入课程信息)
+admin --> (学生所修课程导入)
+admin --> (教师所授课程导入)
 
 }
 

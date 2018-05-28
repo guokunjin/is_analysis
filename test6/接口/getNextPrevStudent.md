@@ -1,7 +1,4 @@
-﻿<!-- markdownlint-disable MD033-->
-<!-- 禁止MD033类型的警告 https://www.npmjs.com/package/markdownlint -->
-
-# 接口：getNextPrevStudent  [返回](../README.md)
+﻿# 接口：getNextPrevStudent  [返回](../README.md)
 用例： [成绩录入](../用例/成绩录入.md)
 
 - 功能：

@@ -5,14 +5,14 @@
 用例： [查看成绩](../用例/查看成绩.md)，[评定成绩](../用例/评定成绩.md)
 
 - 功能：
-    返回一个学生的所有实验成绩和实验评价。
+    返回一个学生对应课程的所有实验成绩和实验评价。
     
 - 权限：
     学生：只能查看自己的成绩，即接口参数student_id必须等于登录学生的student_id
     老师：可以查看所有学生的成绩。
     
 - API请求地址： 
-    接口基本地址/v1/api/getOneStudentResults/<student_id>
+    接口基本地址/v1/api/getOneStudentResults/{course_id}/{student_id}
 
 - 请求方式 ：
     GET
@@ -21,6 +21,7 @@
 
   |参数名称|说明|
   |:---------:|:--------------------------------------------------------|      
+  |course_id|课程编号|
   |student_id|学生的学号|
     
 - 返回实例：
@@ -28,12 +29,12 @@
         {         
             "status": true,
             "info": null,    
-            "student_id": "201510315203", 
-            "github_username": "chinajuedui", 
+            "student_id": "201510414108", 
+            "github_username": "guokunjin", 
             "class": "软件(本)15-1", 
-            "name": "陈松华", 
+            "name": "郭昆进", 
             "total": 6,
-            "avgresult":90.5,       
+            "avgresult":87.5,       
             "data": [
                 {
                 "test_id":1,
