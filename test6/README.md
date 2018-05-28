@@ -14,6 +14,7 @@
 
 ## 2. 系统总体结构
 ![flow1](./img/sys.png)
+
 [界面设计](https://guokunjin.github.io/is_analysis/test6/ui/login_html.html)
 
 ## 3. 用例图设计 [源码](./src/usecase.puml)
@@ -41,10 +42,10 @@
 - ### [“教师所授课程导入”用例](./用例/教师所授课程导入.md),[界面](https://guokunjin.github.io/is_analysis/test6/ui/index-admin_html.html)
 - ### [“发布实验”用例](./用例/发布实验.md),[界面](https://guokunjin.github.io/is_analysis/test6/ui/publishtest_html.html)
 - ### [“成绩录入”用例](./用例/成绩录入.md),[界面](https://guokunjin.github.io/is_analysis/test6/ui/correct_html.html)
-- ### [“打印成绩”用例](./用例/打印成绩.md),[界面](https://guokunjin.github.io/is_analysis/test6/ui/index-teacher_html.html))
+- ### [“打印成绩”用例](./用例/打印成绩.md),[界面](https://guokunjin.github.io/is_analysis/test6/ui/index-teacher_html.html)
 - ### [“选择学期”用例](./用例/选择学期.md),[界面](https://guokunjin.github.io/is_analysis/test6/ui/index-teacher_html.html)
 - ### [“学生列表”用例](./用例/学生列表.md),[界面](https://guokunjin.github.io/is_analysis/test6/ui/index-teacher_html.html)
-- ### [“课程列表”用例](./用例/课程列表.md),[界面](https://guokunjin.github.io/is_analysis/test6/ui/index-student_html.html))
-- ### [“查看成绩”用例](./用例/查看成绩.md),[界面](https://guokunjin.github.io/is_analysis/test6/ui/index-student_html.html))
+- ### [“课程列表”用例](./用例/课程列表.md),[界面](https://guokunjin.github.io/is_analysis/test6/ui/index-student_html.html)
+- ### [“查看成绩”用例](./用例/查看成绩.md),[界面](https://guokunjin.github.io/is_analysis/test6/ui/index-student_html.html)
 
 
