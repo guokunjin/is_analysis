@@ -1,0 +1,8 @@
+@startuml
+title 基于GitHub的实验管理平台--课程列表用例的顺序图
+actor user
+user -> controller_getTerms:getTerms
+controller_getTerms->user:该用户的全部学期集合
+user->controller_getCourses:提供指定学期的id
+controller_getCourses->user:返回用户指定学期的所有课程集合
+@enduml

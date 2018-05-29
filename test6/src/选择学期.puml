@@ -1,0 +1,7 @@
+@startuml
+title 基于GitHub的实验管理平台--选择学期用例的顺序图
+actor user
+user -> controller:getTerms
+controller->user:该用户的全部学期集合
+
+@enduml
